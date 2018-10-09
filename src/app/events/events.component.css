@@ -1,0 +1,10 @@
+/* COL LAYOUT */
+.col-md-4{
+      display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+}
+.col-md-5{
+  padding-bottom: 3rem;
+}

@@ -1,0 +1,38 @@
+/* NAVBAR */
+@media (min-width: 1160px) {
+    .abs-center-x {
+        position: absolute;
+        top: 5px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
+.navbar-collapse {
+  text-align: center;
+}
+.navbar-brand{
+    color: white;
+}
+.navbar-collapse a:hover {
+  background-color: rgba(221, 221, 221, 0.308);
+  color: black;
+}
+.navbar{
+    background: repeating-linear-gradient(
+  45deg,
+  #606dbc,
+  #606dbc 2px,
+  #465298 2px,
+  #465298 40px
+);
+color:white;
+    border-bottom-style: solid;
+    border-width: medium; 
+    border-color:rgba(0, 0, 0, 0.5);
+}
+.navbar-toggler{
+  background-color: rgba(255, 255, 255, 0.486);
+}

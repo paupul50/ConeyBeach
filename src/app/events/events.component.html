@@ -1,0 +1,43 @@
+<hr class="featurette-divider">
+<div class="container marketing small-item">
+
+  <!--LAYOUT FOR DESKTOP-->
+  <div *ngFor="let event of events; let i=index" class="row featurette">
+    <div *ngIf="i%2==0" class="col-md-5">
+      <img class="featurette-image img-fluid mx-auto" [src]="event.imageUrl" alt="Generic placeholder image">
+    </div>
+    <div *ngIf="i%2==0" class="col-md-7">
+      <h2 class="featurette-heading">{{event.title}}
+      </h2>
+      <p class="lead">{{event.body}}
+      </p>
+      <hr>
+    </div>
+    <div *ngIf="i%2==1" class="col-md-7">
+      <h2 class="featurette-heading">{{event.title}}
+      </h2>
+      <p class="lead">{{event.body}}
+      </p>
+      <hr>
+    </div>
+    <div *ngIf="i%2==1" class="col-md-5">
+      <img class="featurette-image img-fluid mx-auto" [src]="event.imageUrl" alt="Generic placeholder image">
+    </div>
+  </div>
+</div>
+
+<!--LAYOUT FOR MOBILE-->
+<div class="container marketing big-item">
+  <div *ngFor="let event of events; let i=index" class="row featurette">
+    <div class="col-md-7">
+      <h2 class="featurette-heading">{{event.title}}
+      </h2>
+      <p class="lead">{{event.body}}
+      </p>
+    </div>
+    <div class="col-md-5">
+      <img class="featurette-image img-fluid mx-auto" [src]="event.imageUrl" alt="Generic placeholder image">
+    </div>
+  </div>
+</div>
+<hr class="featurette-divider">

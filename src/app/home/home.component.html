@@ -1,0 +1,15 @@
+<!--HOME IMAGE SLIDER-->
+<app-carousel></app-carousel>
+<hr>
+      <div class="container marketing">
+        <div class="row">
+          <div *ngFor="let item of homeItems"class="col-lg-4">
+            <img class="rounded-circle" [src]="item.imageUrl" alt="Generic placeholder image"
+              width="140" height="140">
+            <h2>{{item.title}}</h2>
+            <p>{{item.body}}</p>
+            <p>
+              <button class="btn coney-bg" [routerLink]="[item.other]" role="button">View details &raquo;</button>
+            </p>
+          </div>
+        </div>

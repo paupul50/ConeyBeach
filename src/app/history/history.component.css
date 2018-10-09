@@ -1,0 +1,10 @@
+/* FOR RESPONSIVE IMAGE SLIDER */
+@media (max-width: 515px){
+    #my-slider:before {
+    content: ''; display: block; padding-top: 60%;
+}}
+
+@media (min-width: 1000px){
+    #my-slider:before {
+    content: ''; display: block; padding-top: 35%;
+}}
