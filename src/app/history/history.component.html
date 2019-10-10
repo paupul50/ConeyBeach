@@ -1,8 +1,7 @@
-
-<h2 class="text-center">{{title}}</h2>
-<slideshow [showDots]="true" [minHeight]="'525px'" [autoPlay]="true" [showArrows]="true" [imageUrls]="imageSources" [lazyLoad]="imageSources?.length > 1"
-    [autoPlayWaitForLazyLoad]="true">
+<h2 class="text-center">
+    {{historyConstants.Title}}</h2>
+<slideshow [showDots]="true" [minHeight]="'525px'" [autoPlay]="true" [showArrows]="true" [imageUrls]="historyConstants.ImageSources" [lazyLoad]="historyConstants.ImageSources?.length > 1" [autoPlayWaitForLazyLoad]="true">
 </slideshow>
 <hr>
-<div class="container">{{body}}</div>
+<div class="container">{{historyConstants.Body}}</div>
 <hr class="featurette-divider">

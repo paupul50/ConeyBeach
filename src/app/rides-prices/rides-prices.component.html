@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row row-eq-height">
             <!--ITEMS-->
-            <div *ngFor="let ride of rides" class="col-md-4">
+            <div *ngFor="let ride of ridesPricesConstants.Rides" class="col-md-4">
                 <div class="card mb-4 box-shadow">
                     <img class="card-img-top" [src]="ride.imageUrl" alt="Card image cap">
                     <div class="card-body">
@@ -19,9 +19,9 @@
 
             <!--LAST ITEM-->
             <div class="col-md-4">
-                <div  class="card mb-4 box-shadow">
+                <div class="card mb-4 box-shadow">
                     <img class="card-img-top" src="assets/img/rides/more.jpg" alt="Card image cap">
-                    <div  class="card-body">
+                    <div class="card-body">
                         <div class="d-flex justify-content-between align-items">
                         </div>
                         <b><p class="card-text" style="text-align:center;">And More!</p></b>
@@ -31,5 +31,3 @@
         </div>
     </div>
 </div>
-
-

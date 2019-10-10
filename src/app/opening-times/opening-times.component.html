@@ -3,53 +3,16 @@
     <div style="text-align: center;">
         <h1>THIS WEEK</h1>
         <small class="text-secondary">
-            <i>Week 2018/05/07
-                <br>Last updated at 2018/05/06</i>
+            <i>Week {{openingTimesConstants.currentWeek}}
+                <br>Last updated at {{openingTimesConstants.LastUpdatedWeek}}</i>
         </small>
     </div>
     <hr class="featurette-divider">
-
     <div class="row">
-        <div *ngFor="let n of [1,2,3,4,5,6]" class="col-md-4">
-            <div class="card-header">
-                <h4 class="my-0 font-weight-normal">Monday</h4>
+        <ng-container *ngFor="let openingTime of openingTimesConstants.OpeningTimes; let openingTimeIndex = index">
+            <div *ngIf="isLastOpeningTimeElement(openingTimeIndex)" class="col-md-4"></div>
+            <div class="col-md-4">
+                <app-opening-time [openingTime]="openingTime"></app-opening-time>
             </div>
-            <div class="card-body">
-                <h1 class="card-title pricing-card-title">12:00-22:00
-                </h1>
-                Editable text Editable text Editable text Editable text Editable text Editable text Editable text Editable text Editable
-                text Editable text Editable text Editable text Editable text Editable text Editable text Editable text Editable
-                text Editable text Editable text Editable text Editable text
-                <br>
-                <br>
-                <div class="row events-body">
-                    <div class="col-12 events">Events and Programs</div>
-                    <div class="col-12">Beach Running
-                        <br>Costumes 13:00-16:00
-                        <br>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-4">
-
-        </div>
-        <div class="col-md-4">
-            <div class="card-header">
-                <h4 class="my-0 font-weight-normal">Monday</h4>
-            </div>
-            <div class="card-body">
-                <h1 class="card-title pricing-card-title">12:00-22:00
-                </h1>
-                Editable text
-                <br>
-                <br>
-                <div class="row events-body">
-                    <div class="col-12 events">Events and Programs</div>
-                    <div class="col-12">Beach Running
-                        <br>Costumes</div>
-                </div>
-            </div>
-        </div>
+        </ng-container>
     </div>

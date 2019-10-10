@@ -1,8 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import {RouterModule, Routes} from '@angular/router';
-import { HttpModule } from "@angular/http";
+import { RouterModule, Routes } from '@angular/router';
+import { HttpModule } from '@angular/http';
 
 
 import { FacebookModule } from 'ngx-facebook';
@@ -20,18 +20,19 @@ import { CarouselComponent } from './carousel/carousel.component';
 import { LocationStrategy, HashLocationStrategy, PathLocationStrategy } from '@angular/common';
 import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { LaravelService} from './laravel.service';
+import { LaravelService } from './API-test/laravel.service';
 import { SlideshowModule } from 'ng-simple-slideshow';
+import { OpeningTimeComponent } from './opening-times/opening-time/opening-time.component';
 
 const routes: Routes = [
-  {path: '', redirectTo: 'home', pathMatch: 'full'},
-  {path: 'home', component: HomeComponent},
-  {path: 'opening', component: OpeningTimesComponent},
-  {path: 'rides', component: RidesPricesComponent},
-  {path: 'news', component:NewsComponent},
-  { path: 'contacts', component:FindUsComponent},
-  {path: 'history', component:HistoryComponent},
-  {path: 'events', component: EventsComponent},
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: 'home', component: HomeComponent },
+  { path: 'opening', component: OpeningTimesComponent },
+  { path: 'rides', component: RidesPricesComponent },
+  { path: 'news', component: NewsComponent },
+  { path: 'contacts', component: FindUsComponent },
+  { path: 'history', component: HistoryComponent },
+  { path: 'events', component: EventsComponent },
   { path: 'programs', component: ProgramsComponent },
 ]
 
@@ -48,7 +49,8 @@ const routes: Routes = [
     ProgramsComponent,
     CarouselComponent,
     FooterComponent,
-    NavbarComponent
+    NavbarComponent,
+    OpeningTimeComponent
   ],
   imports: [
     BrowserModule,

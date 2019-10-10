@@ -1,17 +1,16 @@
 <header>
     <nav class="navbar navbar-expand-md navbar-light coney-bg ">
-        <!--NAVBAR DUB FOR RESPONSIVE PAGE-->
-        <a style="letter-spacing: 3px;" class="navbar-brand float-right big-item">Coney Beach</a>
-        <a style="letter-spacing: 3px;" class="navbar-brand float-right small-item" [routerLink]="['/home']">Coney Beach</a>
+        <!--NAVBAR DUB FOR DESKTOP PAGE-->
+        <a style="letter-spacing: 3px;" class="navbar-brand float-right mobile-item">Coney Beach</a>
+        <a style="letter-spacing: 3px;" class="navbar-brand float-right desktop-item" [routerLink]="['/home']">Coney Beach</a>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
-            aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse navbar-text" id="navbarCollapse">
 
 
-            <ul class="navbar-nav abs-center-x small-item">
+            <ul class="navbar-nav abs-center-x desktop-item">
                 <li class="nav-item ">
                     <a class="nav-link" [routerLink]="['/home']">Home</a>
                 </li>
@@ -37,8 +36,8 @@
                     <a class=" nav-link" [routerLink]="['/history']">History</a>
                 </li>
             </ul>
-            <!--NAVBAR DUB FOR RESPONSIVE PAGE-->
-            <ul class="navbar-nav abs-center-x big-item">
+            <!--NAVBAR DUB FOR MOBILE PAGE-->
+            <ul class="navbar-nav abs-center-x mobile-item">
                 <li class="nav-item " data-target=".navbar-collapse" data-toggle="collapse">
                     <a class="nav-link" [routerLink]="['/home']">Home</a>
                 </li>

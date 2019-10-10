@@ -1,3 +1,4 @@
+import { OpeningTimesConstants } from './opening-times.constants';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -5,11 +6,11 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './opening-times.component.html',
   styleUrls: ['./opening-times.component.css']
 })
-export class OpeningTimesComponent implements OnInit {
+export class OpeningTimesComponent {
+  openingTimesConstants = OpeningTimesConstants;
 
-  constructor() { }
-
-  ngOnInit() {
+  isLastOpeningTimeElement(element: number): boolean {
+    console.log(element);
+    return element === 6;
   }
-
 }

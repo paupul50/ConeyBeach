@@ -1,15 +1,13 @@
-<!--HOME IMAGE SLIDER-->
 <app-carousel></app-carousel>
 <hr>
-      <div class="container marketing">
-        <div class="row">
-          <div *ngFor="let item of homeItems"class="col-lg-4">
-            <img class="rounded-circle" [src]="item.imageUrl" alt="Generic placeholder image"
-              width="140" height="140">
-            <h2>{{item.title}}</h2>
-            <p>{{item.body}}</p>
+<div class="container marketing">
+    <div class="row">
+        <div *ngFor="let homeItem of homeConstants.HomeItems" class="col-lg-4">
+            <img class="rounded-circle" [src]="homeItem.imageUrl" alt="Generic placeholder image" width="140" height="140">
+            <h2>{{homeItem.title}}</h2>
+            <p>{{homeItem.body}}</p>
             <p>
-              <button class="btn coney-bg" [routerLink]="[item.other]" role="button">View details &raquo;</button>
+                <button class="btn coney-bg" [routerLink]="[homeItem.other]" role="button">View details &raquo;</button>
             </p>
-          </div>
         </div>
+    </div>
